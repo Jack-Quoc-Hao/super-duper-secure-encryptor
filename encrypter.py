@@ -6,5 +6,5 @@ cipher = Fernet(key)
 message = input("Enter text: ").encode()
 encrypted = cipher.encrypt(message)
 
-print("Key:", key.decode())
-print("Encrypted:", encrypted.decode())
+print("Encrypted key:", key.decode())
+print("Encrypted message:", encrypted.decode())
