@@ -1,6 +1,6 @@
 from cryptography.fernet import Fernet
 
-key = input("Enter key: ").strip().encode()
+key = input("Enter your encrypted key: ").strip().encode()
 encrypted = input("Enter encrypted text: ").strip().encode()
 
 cipher = Fernet(key)
