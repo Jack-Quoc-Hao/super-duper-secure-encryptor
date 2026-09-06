@@ -1,13 +1,13 @@
 from cryptography.fernet import Fernet
 
 key = input("Enter your encrypted key: ").strip().encode()
-encrypted = input("Enter encrypted text: ").strip().encode()
+encrypted = input("Enter encrypted message: ").strip().encode()
 
 cipher = Fernet(key)
 
 try:
     decrypted = cipher.decrypt(encrypted)
-    print("Decrypted:", decrypted.decode())
+    print("Decrypted message:", decrypted.decode())
 except Exception as e:
     print("Error type:", type(e).__name__)
     print("Error:", e)
